@@ -15,7 +15,12 @@ facts = [
 ]
 
 @app.route("/")
-def hello_world():
+@app.route("/strona-glowna")
+def strona_glowna():
+    return "<h2>Witaj na mojej stronie!</h2><p>Podstrona z losowymi faktami: <a href='/losowy_fakt'>link</a></p>"
+
+@app.route("/losowy_fakt")
+def losowy_fakt():
     return f"<p>{choice(facts)}</p>"
 
 app.run(debug=True)
