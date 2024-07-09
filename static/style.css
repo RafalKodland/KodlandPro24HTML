@@ -38,3 +38,7 @@ ul {
     text-decoration: underline;
     text-decoration-color: #00a800;
 }
+img {
+    display: block;
+    margin-left: auto;
+}
