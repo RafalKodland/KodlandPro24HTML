@@ -1,11 +1,12 @@
 # Import
 from flask import Flask, render_template
+import random
 
 app = Flask(__name__)
 
 
 def result_calculate(size, lights, device):
-# Zmienne umożliwiające obliczenie poboru energii przez urządzenia
+    # Zmienne umożliwiające obliczenie poboru energii przez urządzenia
     home_coef = 100
     light_coef = 0.04
     devices_coef = 5   
